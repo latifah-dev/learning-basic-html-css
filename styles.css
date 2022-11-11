@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody&display=swap");
+body,
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  /*titik buat class*/
+  width: 1344px; /*container with gutter */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*test*/
+  /* height: 40px; */
+  /* background: green; */
+}
+.col-4 {
+  width: calc(100% / 3-24px);
+}
+.col-3 {
+  width: calc(100% / 4);
+}
+#navbar {
+  /*pagar buat id*/
+  padding-top: 62px;
+  padding-bottom: 62px;
+  position: absolute;
+  width: 100%;
+}
+#navbar .container {
+  justify-content: space-between;
+}
+/* class di dalam ID */
+#navbar .logo {
+  padding: 0 12px;
+}
+#navbar .logo img {
+  height: 60px;
+  width: auto;
+}
+#navbar .menu {
+  padding: 0 12px;
+}
+#navbar ul {
+  list-style: none;
+}
+#navbar ul::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#navbar ul li {
+  float: left; /*rata kiri*/
+  margin: 0 24px;
+}
+#navbar ul li a {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+}
+#navbar ul li a.active {
+  font-weight: bold;
+  color: aqua;
+}
+#navbar .button {
+  padding: 0 12px;
+}
+#navbar .button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: #ffffff;
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #293241;
+  border-radius: 15px;
+}
+#hero {
+  background-color: #0d1728;
+  height: 1276px;
+  background-image: url(images/background-hero.png);
+  background-position: center center;
+}
+#hero .content {
+  margin-top: 191px;
+  padding: 0 12px;
+}
+#hero .content p {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#hero .content h1 {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 138%;
+  /* or 99px */
+
+  text-align: center;
+
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+#hero .content .getting-started {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  display: flex;
+  border-radius: 1000px;
+  margin-bottom: 70px;
+}
+#hero .content .getting-started form {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+#hero .content .getting-started input {
+  padding: 32px 48px;
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #ffffff;
+  background: transparent;
+  flex: 1;
+  border: 0;
+}
+#hero .content .getting-started button {
+  background: #ffffff;
+  padding: 30px 38px;
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  color: #293241;
+  border-radius: 1000px;
+}
+#customer {
+  padding-top: 423px;
+}
+/* #customer .container {
+  display: block;
+} */
+#customer .container h3 {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  color: #293241;
+}
+#customer .container .card {
+  margin: 0 12px;
+  text-align: center;
+}
+#customer .container .card .star-container {
+  margin-bottom: 32px;
+}
+#customer .container .card p {
+  margin-bottom: 24px;
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  text-align: center;
+
+  color: #293241;
+}
+#customer .container .Work {
+  background: #0000;
+}
+#work {
+  padding-top: 152px;
+}
+#work h3 {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+
+  text-align: center;
+
+  color: #293241;
+}
+#work p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Color/300 */
+
+  color: #7f848d;
+  padding-bottom: 111px;
+}
+#work .container {
+  gap: 36px;
+  height: 282px;
+  width: fit-content;
+}
+#work .container .card {
+  background: #1e2746;
+  border-radius: 18px;
+  background-image: url(images/Group.png);
+  padding: 0 24px;
+  height: 250px;
+  width: 299px;
+  background-position: center center;
+}
+#work .container .card h6 {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: left;
+}
+#work .container .card p {
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #d4d6d9;
+  text-align: left;
+}
+#work .vector {
+  background-image: url(images/Vector9.png);
+  background-position: center center;
+}
